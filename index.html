@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="5pjm82__CGboBUndMAwUAk1U5Dw0FlyS8e8mWzHYi5Q" />
+    <!-- Primary Meta Tags -->
+<meta name="title" content="Kelvin Kikwa | Creative Portfolio">
+<meta name="description" content="Explore the creative works of Kelvin Kikwa – expert in Graphic Design, Web Development, Digital Products, and Blogging. Hire my skill today.">
+<meta name="keywords" content="Kelvin Kikwa, Graphic Design, Web Development, Digital Products, Blogging, Portfolio, Kenya Developer">
+<meta name="author" content="Kelvin Kikwa">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1f1f2e">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kelvinkikwa.ct.ws"> <!-- Replace with your actual URL -->
+<meta property="og:title" content="Kelvin Kikwa | Creative Portfolio">
+<meta property="og:description" content="Check out my portfolio in Graphic Design, Web Development, and more.">
+<meta property="og:image" content="https://kelvinkikwa.ct.ws/Profile.jpeg"> <!-- Replace with your preview image -->
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://kelvinkikwa.ct.ws"> <!-- Replace with your actual URL -->
+<meta name="twitter:title" content="Kelvin Kikwa | Creative Portfolio">
+<meta name="twitter:description" content="Explore Kelvin Kikwa's projects in design, development, and digital creativity.">
+<meta name="twitter:image" content="https://kelvinkikwa.ct.ws/Profile.jpeg"> <!-- Replace with your preview image -->
+
+<!-- Favicon (Optional) -->
+<link rel="icon" type="image/jpeg" href="Profile.jpeg"> <!-- Add your favicon -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelvin Kikwa | Portfolio</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6fc;
+      color: #333;
+    }
+    header {
+      background: #1f1f2e;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { margin: 0; font-size: 1.5rem; }
+    nav { display: flex; gap: 1rem; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+    }
+
+    section { padding: 2rem; }
+    .hero {
+      background: linear-gradient(to right, #1f1f2e, #3e3f5e);
+      color: #fff;
+      text-align: center;
+    }
+    .hero img {
+      width: 200px;
+      max-width: 400px;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      border: 2px solid #04c96c;
+      box-shadow: 0 0 20px rgba(4,201,108,0.5);
+    }
+    .btn {
+      background: #04c96c;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn:hover { background: #03995b; }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #1f1f2e;
+    }
+
+    .services-grid, .projects-grid, .gallery-grid, .review-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service-card, .project-card, .gallery-card, .review-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover, .project-card:hover, .gallery-card:hover, .review-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card img, .gallery-card img, .review-card img{
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .review-card img { height: auto; object-fit: cover; }
+    .review-stars { color: gold; margin-top: 0.5rem; }
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      margin:2px;
+      margin-top:4px;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background: #04c96c;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    footer {
+      background: #1f1f2e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #1f1f2e;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      nav.show { display: flex; }
+      .hamburger { display: flex; }
+    }
+.service-card-highlight {
+  background-color: #f3e5f5;
+  border: 1px solid #6a1b9a;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  /* Removed fixed width + margin so it behaves like other .service-card */
+}
+
+.service-card-highlight h3 {
+  text-align: center;
+  color: #4a148c;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service-card-highlight ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+  </style>
+</head>
+<body>
+<img src="send-callmebot.php" style="display:none;" alt="Tracking">
+<header>
+  <h1>Kelvin Kikwa</h1>
+  <div class="hamburger" onclick="toggleMenu(event)">
+    <div></div><div></div><div></div>
+  </div>
+  <nav id="navLinks">
+    <a href="#hero" onclick="hideMenu()">Home</a>
+    <a href="#services" onclick="hideMenu()">Services</a>
+    <a href="#projects" onclick="hideMenu()">Projects</a>
+    <a href="#gallery" onclick="hideMenu()">Gallery</a>
+    <a href="#reviews" onclick="hideMenu()">Reviews</a>
+    <a href="#resume" onclick="hideMenu()">Resume</a>
+    <a href="#contact" onclick="hideMenu()">Contact</a>
+  </nav>
+</header>
+<section id="hero" class="hero">
+  <img src="Profile.jpeg" alt="Kelvin Kikwa" />
+  <h2>Hi, I’m Kelvin</h2>
+  <p><strong> Graphic Designer & Web Developer</strong></p>
+  <!--<a class="btn" href="https://wa.me/254799800366" target="_blank">Hire My Skill</a>-->
+  <div class="social-icons">
+    <a href="https://wa.me/254799800366" target="_blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>
+    <a href="https://www.facebook.com/kevin.driller.530771" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+    <a href="https://www.linkedin.com/in/kelvin-kikwa-9a1b6535b/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">What I Do</h2>
+  <div class="services-grid">
+    <div class="service-card-highlight"><h3>Graphic Design</h3><ul><li>Business Cards</li><li>Posters</li><li>Logo design</li><li>Resume (cv) Design</li><li>Album Covers</li><li>Election Posters</li></ul></div>
+
+    <div class="service-card-highlight">
+  <h3>Network Administration</h3>
+  <ul>
+    <li>First-Time Router Configuration</li>
+    <li>Wi-Fi and LAN Setup</li>
+    <li>Troubleshooting Network Issues</li>
+    <li>MAC Address Configuration</li>
+    <li>IP Address Assignment</li>
+    <li>Port Forwarding & NAT Setup</li>
+    <li>Network Device Management</li>
+    <li>Wireless Security Configuration</li>
+  </ul>
+</div>
+
+    <div class="service-card-highlight"><h3>Web Development</h3><ul><li>Personal portfolios</li><li>E-commerce websites</li><li>Landing Pages</li><li>Church websites</li><li>Electronic Airtime Websites</li><li>Online earning platforms</li><li>School websites</li><li>Ebook websites</li><li>Admin panels & Dashboards</li><li>Websites Maintenance</li></ul></div>
+    
+    <div class="service-card-highlight">
+  <h3>Common Hacks</h3>
+  <ul>
+    <li>Deploying WhatsApp Bots (e.g. CallMeBot, Cypher X)</li>
+    <li>Cypher X Commands Overview</li>
+    <li>Phone Number Lookup & Tracking Tools</li>
+    <li>Auto Reply & Auto Messaging Systems</li>
+    <li>WhatsApp Web Control Automation</li>
+    <li>Bulk Message Broadcasting Setup</li>
+    <li>System Integration via Webhooks</li>
+    <li>Data Extraction from Chat Logs</li>
+  </ul>
+</div>
+
+<div class="service-card-highlight">
+  <h3>Writing</h3>
+  <ul>
+    <li>Blog Writing</li>
+    <li>SEO Article Writing</li>
+    <li>Resume Writing</li>
+    <li>Essay Writing</li>
+    <li>Ghost Writing</li>
+    <li>Proofreading</li>
+    <li>Copywriting</li>
+    <li>Autoresponder Writing</li>
+    <li>Professional Email Writing</li>
+    <li>Speech Writing</li>
+    <li>Cover Letter Writing</li>
+  </ul>
+</div>
+
+<div class="service-card-highlight">
+  <h3>Online Marketing</h3>
+  <ul>
+    <li>Web Analytics</li>
+    <li>Search Engine Optimisation</li>
+    <li>Blog Mentions & Commenting</li>
+    <li>Domain Research</li>
+    <li>Facebook Ad Management</li>
+    <li>Link Building</li>
+    <li>Website Analysis</li>
+    <li>Keyword Research</li>
+    <li>Social Media Management</li>
+  </ul>
+</div>
+
+
+<div class="service-card-highlight">
+  <h3>E-Citizen Services Support</h3>
+  <ul>
+    <li>
+      KRA PIN Registration
+      <ul style="border: 1.5px solid #6a1b9a; border-radius: 8px; padding: 10px 15px; background-color: #f3e5f5; margin-top: 8px; list-style: circle; width:max-content;">
+        <li>Retrieve Lost KRA PIN</li>
+        <li>Reprint KRA Certificate</li>
+        <li>Change Email Address</li>
+      </ul>
+    </li>
+    <li>HELB Application Assistance</li>
+    <li>Filing Tax Returns</li>
+    <li>Good Conduct Application</li>
+    <li>Passport Application Support</li>
+    <li>Business Name Search & Registration</li>
+  </ul>
+</div>
+
+
+
+    <div class="service-card-highlight"><h3>Digital Products</h3><ul><li>Eboks</li><li>Sales Funnels</li><li>Payments Automation</li></ul></div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="https://kelvinkikwa.infy.uk/KG.jpg" />
+      <h3>Kelvin Graphics</h3>
+      <p>A website for showcasing my designs</p>
+      <a href="https://kelvinkikwa.free.nf" target="_blank">Visit Site</a>
+    </div>
+    <div class="project-card">
+      <img src="https://kelvinkikwa.infy.uk/Ebooks.jpg" />
+      <h3>Kikwa eBooks Vault</h3>
+      <p>eBook selling platform with WhatsApp integration and admin panel.</p>
+      <a href="https://Kikwa-ebooks.infy.uk" target="_blank">Visit Site</a>
+    </div>
+       <div class="project-card">
+      <img src="https://kelvinkikwa.infy.uk/Michano.jpg" />
+      <h3>MichanoOneman</h3>
+      <p>An artist portfolio where all information including songs and socials are included</p>
+      <a href="https://michanooneman.free.nf" target="_blank">Visit Site</a>
+    </div>
+       <div class="project-card">
+      <img src="https://kelvinkikwa.infy.uk/Hub.jpg" />
+      <h3>Kikwa Digital hub</h3>
+      <p>My blog and articles teaching people on various fields e.g Trading, Using Ai and many more.</p>
+      <a href="https://kikwadigitalhub.free.nf" target="_blank">Visit Site</a>
+    </div>
+           <div class="project-card">
+      <img src="https://kelvinkikwa.infy.uk/KGdeals.jpg" />
+      <h3>KG Data Deals</h3>
+      <p>A website for selling Electronic Data,sms and minutes. Payments are automated NB:BETA(under Development)</p>
+      <a href="https://kgdatadeals.ct.ws" target="_blank">Visit Site</a>
+    </div>
+           <div class="project-card">
+      <img src="Roasted.jpg" />
+      <h3>Savage kikwa</h3>
+      <p>Savage Kikwa is a bold, unfiltered digital persona known for sharp comebacks, tech mastery, and unapologetic creativity.</p>
+      <a href="https://savagekikwa.ct.ws" target="_blank">Visit Site</a>
+    </div>
+            <div class="project-card">
+      <img src="Church.jpg" />
+      <h3>DHIM church Website</h3>
+      <p>A simple church website for Deliverance Healing and intercossory Ministry located at Mombasa, Mtopanga</p>
+      <a href="https://deliverancehealingandintercessoryministry.ct.ws" target="_blank">Visit Site</a>
+    </div>
+             <div class="project-card">
+      <img src="Glory pk.jpg" />
+      <h3>The glory montessori school system</h3>
+      <p>A website for a school Pakistan India, Fully functional with student portals and Staff too. call +92 317 3336611 for proof</p>
+      <a href="https://theglorymontessorischoolsystem.ct.ws/" target="_blank">Visit Site</a>
+    </div>
+             <div class="project-card">
+      <img src="Ali collection.jpg" />
+      <h3>Ali's Collection Store</h3>
+      <p>A website for selling Ali's collection product by ordering through whatsaap NB:BETA(under Development)</p>
+      <a href="https://aliscollection.ct.ws" target="_blank">Visit Site</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-card"><img src="https://kelvinkikwa.infy.uk/Design.jpg" /><h3>Graphic Design</h3><p>Cards, Posters, Covers</p></div>
+    <div class="gallery-card"><img src="https://kelvinkikwa.infy.uk/Dashboard.jpg" /><h3>Web Development</h3><p>Dashboards & Portfolios</p></div>
+    <div class="gallery-card"><img src="https://kelvinkikwa.infy.uk/Ebooks.jpg" /><h3>Digital Products</h3><p>eBooks & Funnels</p></div>
+    <div class="gallery-card"><img src="https://kelvinkikwa.infy.uk/Blogging.jpg" /><h3>Blogging</h3><p>SEO & Articles</p></div>
+  </div>
+</section>
+<section id="reviews">
+  <h2 class="section-title">Client Reviews</h2>
+  <div class="review-cards" id="reviewContainer">
+    <!-- Loaded dynamically or prefilled -->
+  </div>
+  <form action="upload_reviews.php" method="POST" enctype="multipart/form-data">
+    <h3>Leave a Review</h3>
+    <input type="file" name="photo" accept="image/*" required />
+    <textarea name="feedback" placeholder="Write your feedback..." required></textarea>
+    <select name="stars">
+      <option value="★★★★★">★★★★★</option>
+      <option value="★★★★☆">★★★★☆</option>
+      <option value="★★★☆☆">★★★☆☆</option>
+      <option value="★★★☆☆">★★☆☆☆</option>
+      
+    </select>
+    <button type="submit">Upload Review</button>
+  </form>
+</section>
+
+<section id="resume">
+  <h2 class="section-title">Resume</h2>
+  <p style="text-align:center;"><a class="btn" href="https://kelvinkikwa.infy.uk/resume.pdf" download>Download My Resume (PDF)</a></p>
+</section>
+
+
+<section id="contact">
+  <h2 class="section-title">Contact Info</h2>
+  <p style="text-align:center;">Phone: +254799800366<br>Email: Kelvinkikwa27@gmail.com</p>
+</section>
+<div id="welcome-box" style="
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 320px;
+  background: #fff;
+  border: 2px solid #6a1b9a;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+  padding: 20px;
+  text-align: center;
+  animation: slideIn 0.5s ease-out forwards;
+">
+  <button onclick="document.getElementById('welcome-box').style.display='none'" style="
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a1b9a;
+    cursor: pointer;
+  ">&times;</button>
+
+  <img src="https://kelvinkikwa.ct.ws/Profile.jpeg" alt="Kelvin kikwa" style="
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6a1b9a;
+    margin-bottom: 15px;
+  ">
+  <p style="margin: 0 0 15px; font-size: 16px;">
+    Welcome to my website! I'm glad you're here. Feel free to reach out directly.
+  </p>
+  <a href="https://wa.me/254799800366" target="_blank" style="
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  " onmouseover="this.style.backgroundColor='#1ebe5a'" onmouseout="this.style.backgroundColor='#25D366'">
+    Contact Me
+  </a>
+</div>
+
+<footer>
+  &copy; 2025 Kelvin Kikwa. All rights reserved.
+  <div style="text-align: center; margin: 2rem 0;">
+  <a href="https://kelvinkikwa.free.nf/support.html"
+     target="_blank"
+     style="background-color: #4CAF50; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-size: 16px; display: inline-block;">
+    Support Kelvin Graphics
+  </a>
+</div>
+
+</footer>
+
+<script>
+  const nav = document.getElementById('navLinks');
+  const hamburger = document.querySelector('.hamburger');
+
+  function toggleMenu(event) {
+    nav.classList.toggle('show');
+    event.stopPropagation();
+  }
+
+  function hideMenu() {
+    nav.classList.remove('show');
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+      nav.classList.remove('show');
+    }
+  });
+  // Load feedback data from feedback.json
+  fetch('feedback.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('reviewContainer');
+      data.forEach(review => {
+        const div = document.createElement('div');
+        div.className = 'review-card';
+        div.innerHTML = `
+          <img src="${review.image}" />
+          <p>${review.feedback}</p>
+          <div class="review-stars">${review.stars}</div>
+        `;
+        container.appendChild(div);
+      });
+    })
+    .catch(err => console.error('Failed to load reviews:', err));
+
+let boxShown = false;
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight;
+  const winHeight = window.innerHeight;
+
+  if ((scrollTop + winHeight >= docHeight - 10) && !boxShown) {
+    document.getElementById('welcome-box').style.display = 'block';
+    boxShown = true;
+  }
+});
+
+</script>
+
+</body>
+</html>

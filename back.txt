@@ -1,0 +1,32 @@
+[
+    {
+        "image": "images\/1749932469_1749923991_44A18F87-D489-4AAC-8B19-233ED3F7FA9F.png",
+        "feedback": "It is fantastic extra concushion superlogistic brand. Best option to explore",
+        "stars": "\u2605\u2605\u2605\u2605\u2605"
+    },
+    {
+        "image": "images\/1749932608_1749927077_1000006380.jpg",
+        "feedback": "I got a good design From Kelvin Graphics. My option for proffesionalism\u263a",
+        "stars": "\u2605\u2605\u2605\u2605\u2605"
+    },
+    {
+        "image": "images\/1749994564_1749994013_IMG-20230811-WA0001_2.jpg",
+        "feedback": "Great work. Decided to be a member afterwards",
+        "stars": "\u2605\u2605\u2605\u2605\u2605"
+    },
+    {
+        "image": "images\/1749994921_1000077808.jpg",
+        "feedback": "Kelvin  designed my logo very nice",
+        "stars": "\u2605\u2605\u2605\u2605\u2605"
+    },
+    {
+        "image": "images\/1749999134_1000081968.jpg",
+        "feedback": "Kudos \ud83d\udc4f great work may God bless the work of your hands ",
+        "stars": "\u2605\u2605\u2605\u2605\u2605"
+    },
+    {
+        "image": "images\/1750003642_Owharo.jpeg",
+        "feedback": "The design was perfect.The 5 stars are'nt enought wish there were more to add.",
+        "stars": "\u2605\u2605\u2605\u2605\u2605"
+    }
+]
