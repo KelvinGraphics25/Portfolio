@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log("Service Worker registered"));
+  }
+</script>
     <meta name="google-site-verification" content="5pjm82__CGboBUndMAwUAk1U5Dw0FlyS8e8mWzHYi5Q" />
     <!-- Primary Meta Tags -->
 <meta name="title" content="Kelvin Kikwa | Creative Portfolio">
@@ -13,20 +21,20 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kelvinkikwa.ct.ws"> <!-- Replace with your actual URL -->
+<meta property="og:url" content="https://kelvinkikwa.ct.ws"> 
 <meta property="og:title" content="Kelvin Kikwa | Creative Portfolio">
 <meta property="og:description" content="Check out my portfolio in Graphic Design, Web Development, and more.">
-<meta property="og:image" content="https://kelvinkikwa.ct.ws/Profile.jpeg"> <!-- Replace with your preview image -->
+<meta property="og:image" content="https://kelvinkikwa.ct.ws/Profile.jpeg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://kelvinkikwa.ct.ws"> <!-- Replace with your actual URL -->
+<meta name="twitter:url" content="https://kelvinkikwa.ct.ws"> 
 <meta name="twitter:title" content="Kelvin Kikwa | Creative Portfolio">
 <meta name="twitter:description" content="Explore Kelvin Kikwa's projects in design, development, and digital creativity.">
-<meta name="twitter:image" content="https://kelvinkikwa.ct.ws/Profile.jpeg"> <!-- Replace with your preview image -->
+<meta name="twitter:image" content="https://kelvinkikwa.ct.ws/Profile.jpeg"> 
 
 <!-- Favicon (Optional) -->
-<link rel="icon" type="image/jpeg" href="Profile.jpeg"> <!-- Add your favicon -->
+<link rel="icon" type="image/jpeg" href="Profile.jpeg"> 
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
